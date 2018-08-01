@@ -1,0 +1,32 @@
+{
+	"scripts": {
+		"update": "npm update && npm run postinstall",
+		"postinstall": "node node_modules/@richmediamonks/scripts/version"
+	},
+	"license": "ISC",
+	"main": "",
+	"dependencies": {
+		"@richmediamonks/build": "git+ssh://git@git.assembla.com:mediamonks/mediamonks-banners-library.build.git#v1.0.2",
+		"@netflixadseng/pk-component-utils": "1.1.10",
+		"@richmediamonks/scripts": "git+ssh://git@git.assembla.com:mediamonks/mediamonks-banners-library.scripts.git#v1.0.4",
+		"@netflixadseng/pk-component-assets": "1.1.0",
+		"@netflixadseng/wc-netflix-cta": "1.1.8",
+		"@richmediamonks/temple": "git+ssh://git@git.assembla.com:mediamonks/mediamonks-banners-library.git#v2.1.9",
+		"@netflixadseng/wc-netflix-flushed-ribbon": "1.1.3",
+		"@netflixadseng/wc-netflix-fonts": "1.1.0",
+		"@netflixadseng/wc-netflix-text": "1.0.10",
+		"@netflixadseng/wc-netflix-video": "1.1.0",
+		"@netflixadseng/wc-monet-integrator": "1.0.12",
+		"@netflixadseng/wc-netflix-img": "1.0.20",
+		"@netflixadseng/wc-netflix-brand-logo": "1.3.3",
+		"@netflixadseng/wc-netflix-ratings-bug": "1.0.7"
+	},
+	"description": "MediaMonks Rich Media Project => canvasRGBseparation",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"version": "1.0.0",
+	"name": "canvasRGBseparation",
+	"author": "MediaMonks"
+}

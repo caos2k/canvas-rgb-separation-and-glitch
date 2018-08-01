@@ -1,0 +1,36 @@
+{
+    "rich": {
+        "formats": [
+            {
+                "variations": [],
+                "size": {
+                    "width": 300,
+                    "height": 250
+                },
+                "title": "master_300x250",
+                "build": {
+                    "minify": [],
+                    "exclude": [],
+                    "flatten": []
+                },
+                "platforms": [
+                    "doubleclick"
+                ],
+                "modules": [],
+                "languages": []
+            }
+        ],
+        "build": {
+            "tinypng": false,
+            "flatten": [],
+            "tinyjpg": false,
+            "inline": [],
+            "minify": [],
+            "exclude": [],
+            "modules": [],
+            "backup": [],
+            "custom_tasks": {}
+        },
+        "project_title": "rich"
+    }
+}

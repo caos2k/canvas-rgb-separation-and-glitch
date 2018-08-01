@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="ad.size" content="width=300px,height=250px">
+	<meta name="main" content="js/main.js">
+
+	<title>master_300x250</title>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+</head>
+
+<body data-config="config.json">
+	
+	
+	<div id="banner" class="hide">
+
+		<div id="div_main">
+
+			<div id="svgContainer" class="canvasClass">			
+				<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				
+				<defs>
+					<filter id="red" color-interpolation-filters="sRGB">
+						<feColorMatrix type="matrix" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+					</filter>
+					<filter id="green" color-interpolation-filters="sRGB">
+						<feColorMatrix type="matrix" values="0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+					</filter>
+					<filter id="blue" color-interpolation-filters="sRGB">
+						<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+					</filter>
+
+					<filter id="blendNorm" x="0" y="0" width="200" height="200" filterUnits="userSpaceOnUse">
+						<feImage id="svgRedValue" x="0" y="0" width="200" height="200" xlink:href="img/timR.png" result="img1" />
+						<feImage id="svgGreenValue" x="0" y="0" width="200" height="200" xlink:href="img/timG.png" result="img2" />
+						<feImage id="svgBlueValue" x="0" y="0" width="200" height="200" xlink:href="img/timB.png" result="img3" />
+						
+						<feBlend mode="screen" in="img1" in2="img2" result="imgRG"/>
+						<feBlend mode="screen" in="imgRG" in2="img3"/>
+					</filter>
+				</defs>
+				
+				<image filter="url(#red)" x="0" y="0" id="svgRed" width="200" height="200" xlink:href="img/timB.png"/>
+				<image filter="url(#green)" x="0" y="0" id="svgGreen" width="200" height="200" xlink:href="img/timB.png"/>
+				<image filter="url(#blue)" x="0" y="0" id="svgBlue" width="200" height="200" xlink:href="img/timB.png"/>
+
+				<image xlink:href="img/homer2.jpg" x="0" y="0" width="200" height="200" filter="url(#blendNorm)" "/>
+
+				</svg>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script rel='preconnect' crossorigin src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.5_23b0de6da0ee295131e32a500470610c_min.js"></script>
+
+	<!-- build:temple js/Temple.js -->
+	<script temple src="../../node_modules/@richmediamonks/temple/framework/Temple.js"></script>
+	<!-- /build -->
+            
+</body>
+</html>

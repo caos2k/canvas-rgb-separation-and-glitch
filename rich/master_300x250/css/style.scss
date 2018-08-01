@@ -1,0 +1,57 @@
+/* setup */
+
+$width: 800px;
+$height: 800px;
+
+
+/* base */
+
+@import '../../../shared/base';
+
+/* Banner Styles */
+
+#banner {
+	background-color: #fff;
+}
+
+.canvasClass{
+	position: absolute;
+}
+
+#composite{
+	bottom: 50px;
+	left: 175px;
+}
+
+#svgContainer{
+	bottom: 50px;
+    left: 430px;
+}
+
+#svgContainerFAKE{
+	bottom: 50px;
+    left: 130px;
+}
+
+#canvas_original{
+	top: 50px;
+	left: 300px;
+}
+
+#canvas_red{
+	top: 300px;
+	left: 50px;
+	// background: red;
+}
+
+#canvas_green{
+	top: 300px;
+	left: 300px;
+	// background: green;
+}
+
+#canvas_blue{
+	top: 300px;
+	left: 550px;
+	// background: blue;
+}
